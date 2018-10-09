@@ -1,0 +1,9 @@
+resources:
+  database:
+    type: redis
+services:
+  web:
+    build: ./docker/multi
+    port: 3000
+    resources:
+      - database
