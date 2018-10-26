@@ -1,7 +1,7 @@
-FROM debian:stretch
+## BASE ########################################################
+FROM debian:stretch AS base
 
-RUN apt-get update -y
-RUN apt-get install -y build-essential curl
+RUN apt-get update -y && apt-get install -y build-essential curl
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install -y nodejs
 

@@ -3,7 +3,7 @@ resources:
     type: redis
 services:
   web:
-    build: ./docker/multi
+    build: .
     port: 3000
     resources:
       - database
