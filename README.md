@@ -1,3 +1,3 @@
 # nodejs
 
-Sample Express application
+Sample Containerized Express application
